@@ -38,7 +38,7 @@ public class Heroes implements Comparable <Heroes> {
     @Override
     public int compareTo(Heroes o) {
         int result = this.name.compareTo(o.name);
-        // Если именна одинаковые то сравниваем место рождения
+        // Если именна одинаковые, то сравниваем по месту рождения
         if (result == 0) {
             result = this.bpl.compareTo(o.bpl);
         }
